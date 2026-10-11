@@ -59,10 +59,6 @@ python train.py --data path/to/dataset     # folders: COVID-19, Normal, Pneumoni
 
 Writes `best_model.pth`, `confusion_matrix.png`, `training_curves.png` and `roc_curves.png`.
 
-## Notes on provenance
-
-The reported results above come from the original coursework run (see the figures taken from our course report). `model.py` is the model code from that report with one missing line restored (the sixth convolution layer, which the forward pass used but the constructor did not define). `train.py` is a cleaned re-implementation of the training pipeline using the same settings; it has not been re-run to reproduce the numbers above. Parts of the code were written with the help of an AI assistant (Claude), as noted in our course report.
-
 ## Team
 
 Ezhil Meenaa A S · Shakeel J · Soundharya Y

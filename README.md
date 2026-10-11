@@ -6,6 +6,12 @@ Course project (UBM2722 – Neural Networks and Pattern Recognition, SSN College
 
 [3 Kinds of Pneumonia (Kaggle)](https://www.kaggle.com/datasets/artyomkolas/3-kinds-of-pneumonia): 9,208 chest X-rays pooled from 15 public datasets (Normal 3,270 · COVID-19 1,281 · Bacterial 3,001 · Viral 1,656). Images are not included in this repository. Split: 70 % train / 15 % validation / 15 % test.
 
+## Example images
+
+![Example chest X-rays, one per class](images/class_examples.png)
+
+*One sample chest X-ray per class from the Kaggle dataset above (left to right: COVID-19, normal, bacterial pneumonia, viral pneumonia). Image size, framing and acquisition vary a lot between sources.*
+
 ## Model (`model.py`)
 
 Six 3×3 convolution blocks (32 → 64 → 96 → 125 → 150 → 150 filters, ReLU + 2×2 max-pooling) → **global average pooling** → Dense(128) + dropout 0.5 → Dense(4).
